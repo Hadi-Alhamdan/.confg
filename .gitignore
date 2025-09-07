@@ -1,0 +1,18 @@
+# Ignore application caches
+**/Cache/
+**/cache/
+
+# Ignore compiled files and binaries
+*.node
+*.iso
+
+# Ignore specific large directories by name
+VirtualBox/
+discord/
+
+# General OS files to ignore
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
