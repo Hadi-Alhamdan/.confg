@@ -1,0 +1,125 @@
+{
+    "habits": [
+        {
+            "id": 4,
+            "name": "نومة بكير",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 02:59:16",
+            "updated_at": "2025-06-14 04:00:40"
+        },
+        {
+            "id": 5,
+            "name": "قيام الليل",
+            "current_weight": 0.1,
+            "is_archived": 0,
+            "created_at": "2025-06-14 02:59:31",
+            "updated_at": "2025-06-14 04:00:27"
+        },
+        {
+            "id": 6,
+            "name": "كتابة اليوميات",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 02:59:51",
+            "updated_at": "2025-06-14 04:00:14"
+        },
+        {
+            "id": 7,
+            "name": "صلاة العشاء",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:00:12",
+            "updated_at": "2025-06-14 04:17:48"
+        },
+        {
+            "id": 8,
+            "name": "صلاة المغرب",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:00:26",
+            "updated_at": "2025-06-14 04:18:04"
+        },
+        {
+            "id": 9,
+            "name": "اذكار المساء",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:00:56",
+            "updated_at": "2025-06-14 04:15:04"
+        },
+        {
+            "id": 10,
+            "name": "صلاة العصر",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:01:19",
+            "updated_at": "2025-06-14 04:18:22"
+        },
+        {
+            "id": 11,
+            "name": "صلاة الظهر",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:01:31",
+            "updated_at": "2025-06-14 04:17:41"
+        },
+        {
+            "id": 12,
+            "name": "صلاة الضحى",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:01:50",
+            "updated_at": "2025-06-14 03:59:01"
+        },
+        {
+            "id": 13,
+            "name": "قراءة القران",
+            "current_weight": 0.15,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:02:09",
+            "updated_at": "2025-06-14 03:58:31"
+        },
+        {
+            "id": 14,
+            "name": "اذكار الصباح",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:03:02",
+            "updated_at": "2025-06-14 04:15:21"
+        },
+        {
+            "id": 15,
+            "name": "صلاة الفجر",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:03:15",
+            "updated_at": "2025-06-14 04:18:11"
+        },
+        {
+            "id": 16,
+            "name": "ركعتين الفجر",
+            "current_weight": 0.1,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:03:28",
+            "updated_at": "2025-06-14 03:57:32"
+        },
+        {
+            "id": 17,
+            "name": "الفيقة بكير",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:03:43",
+            "updated_at": "2025-06-14 03:57:13"
+        }
+    ],
+    "habitCompletions": [],
+    "tasks": [],
+    "timeLogs": [],
+    "dailyScores": [
+   
+    ],
+    "streakData": [
+    ],
+    "exportedAt": "2025-06-17T11:53:49.997Z"
+}

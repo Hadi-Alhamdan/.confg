@@ -1,0 +1,36 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias ll='ls -al'
+alias grep='grep --color=auto'
+
+# Dracula Theme Colors for Prompt
+DRACULA_PURPLE='\[\e[38;2;189;147;249m\]' # bd93f9
+DRACULA_CYAN='\[\e[38;2;139;233;253m\]'   # 8be9fd
+DRACULA_GREEN='\[\e[38;2;80;250;123m\]'    # 50fa7b
+DRACULA_PINK='\[\e[38;2;255;121;199m\]'   # ff79c7
+DRACULA_COMMENT='\[\e[38;2;98;114;164m\]'  # 6272a4
+DRACULA_RESET='\[\e[0m\]'
+BOLD='\[\e[1m\]'
+NORMAL='\[\e[22m\]' 
+
+# Assembling the PS1 Prompt
+PS1="${DRACULA_PURPLE}${BOLD}\u${NORMAL}${DRACULA_RESET}"          # User (Purple, Bold)
+PS1+="${DRACULA_COMMENT}@${DRACULA_RESET}"                         # @ (Comment Grey)
+PS1+="${DRACULA_CYAN}${BOLD}\h${NORMAL}${DRACULA_RESET}"           # Machine (Cyan, Bold)
+PS1+="${DRACULA_COMMENT}:${DRACULA_RESET}"                         # : (Comment Grey)
+PS1+="${DRACULA_GREEN}\w${DRACULA_RESET}"                          # Path (Green)
+PS1+=" ${DRACULA_PINK}${BOLD}\$${NORMAL}${DRACULA_RESET} "         # $ (Pink, Bold)
+
+# If you want the prompt symbol to be '#' for root and '$' for normal users:
+PS1+=" ${DRACULA_PINK}${BOLD}\\\$${NORMAL}${DRACULA_RESET} "
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="$HOME/.local/bin:$PATH"

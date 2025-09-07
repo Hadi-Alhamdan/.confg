@@ -1,0 +1,129 @@
+00:00:00.001099 main     VirtualBox XPCOM Server 7.2.0 r170228 linux.amd64 (Aug 14 2025 19:02:36) release log
+00:00:00.001103 main     Log opened 2025-08-29T06:17:17.098389000Z
+00:00:00.001105 main     Build Type: release
+00:00:00.001108 main     OS Product: Linux
+00:00:00.001111 main     OS Release: 6.16.3-arch1-1
+00:00:00.001113 main     OS Version: #1 SMP PREEMPT_DYNAMIC Sat, 23 Aug 2025 15:32:49 +0000
+00:00:00.001136 main     DMI Product Name: 82WM
+00:00:00.001149 main     DMI Product Version: Legion Pro 5 16ARX8
+00:00:00.001157 main     Firmware type: UEFI
+00:00:00.001308 main     Secure Boot: Disabled
+00:00:00.001355 main     Host RAM: 31258MB (30.5GB) total, 27577MB (26.9GB) available
+00:00:00.001360 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.001363 main     Process ID: 33041
+00:00:00.001365 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.006827 main     IPC socket path: /tmp/.vbox-hadi-ipc/ipcd
+00:00:00.010345 DCon01   VirtualBox: object creation starts
+00:00:00.010419 DCon01   Home directory: '/home/hadi/.config/VirtualBox'
+00:00:00.010605 DCon01   Loading settings file "/home/hadi/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:00:00.012939 DCon01   Successfully initialised host USB using sysfs
+00:00:00.021931 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlo1: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.039850 DCon01   HostDnsMonitor: initializing
+00:00:00.040056 DCon01   NAT: resolv.conf: nameserver 192.168.18.1
+00:00:00.040080 DCon01   NAT: resolv.conf: FIXME: ignoring IPv6 zone %wlo1
+00:00:00.040090 DCon01   NAT: resolv.conf: nameserver fe80::fa9b:6eff:fefe:d6e1
+00:00:00.040113 DCon01   HostDnsMonitor: updating information
+00:00:00.040136 DCon01   HostDnsMonitor: old information
+00:00:00.040145 DCon01     no server entries
+00:00:00.040154 DCon01     no domain set
+00:00:00.040163 DCon01     no search string entries
+00:00:00.040170 DCon01   HostDnsMonitor: new information
+00:00:00.040178 DCon01     server 1: 192.168.18.1
+00:00:00.040186 DCon01     server 2: fe80::fa9b:6eff:fefe:d6e1%wlo1
+00:00:00.040195 DCon01     no domain set
+00:00:00.040203 DCon01     no search string entries
+00:00:00.050827 DCon01   failed to create vboxnet0, error (VERR_GENERAL_FAILURE)
+00:00:00.059725 DCon01   failed to create vboxnet1, error (VERR_GENERAL_FAILURE)
+00:00:00.059853 DCon01   VD: VDInit finished with VINF_SUCCESS
+00:00:00.059946 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={925084b0-625f-422f-a67d-0ede1880a56c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.060791 DCon01   Platform architecture set to 'x86'
+00:00:00.061059 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/kali/kali.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.061065 DCon01   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.061151 DCon01   Platform architecture set to 'x86'
+00:00:00.061254 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Shamela wind/Shamela wind.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.061258 DCon01   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.061317 DCon01   Platform architecture set to 'x86'
+00:00:00.061414 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Metasploitable2/Metasploitable2.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.061417 DCon01   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.061501 DCon01   Platform architecture set to 'x86'
+00:00:00.061609 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Metasploitable3-ub1404/Metasploitable3-ub1404.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.061613 DCon01   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.061671 DCon01   Platform architecture set to 'x86'
+00:00:00.061767 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/metasploitable3_win2k8_1751664159717_18163/metasploitable3_win2k8_1751664159717_18163.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.061769 DCon01   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.061831 DCon01   Platform architecture set to 'x86'
+00:00:00.061926 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/IE11 - Win7/IE11 - Win7.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.061928 DCon01   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.061984 DCon01   Platform architecture set to 'x86'
+00:00:00.062073 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/MSEdge - Win10/MSEdge - Win10.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.062077 DCon01   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.062460 DCon01   VirtualBox: object created
+00:00:00.812499 DCon03   Platform architecture set to 'x86'
+00:00:00.812696 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/kali/kali.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.812703 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.813197 DCon03   Platform architecture set to 'x86'
+00:00:00.813299 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/kali/kali.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.813304 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.814183 DCon03   Platform architecture set to 'x86'
+00:00:00.814393 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/kali/kali.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.814401 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.820751 DCon03   Platform architecture set to 'x86'
+00:00:00.820864 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Shamela wind/Shamela wind.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.820868 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.821298 DCon03   Platform architecture set to 'x86'
+00:00:00.821411 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Shamela wind/Shamela wind.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.821415 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.822139 DCon03   Platform architecture set to 'x86'
+00:00:00.822237 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Shamela wind/Shamela wind.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.822241 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.824135 DCon03   Platform architecture set to 'x86'
+00:00:00.824245 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Metasploitable2/Metasploitable2.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.824250 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.824670 DCon03   Platform architecture set to 'x86'
+00:00:00.824770 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Metasploitable2/Metasploitable2.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.824773 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.825464 DCon03   Platform architecture set to 'x86'
+00:00:00.825564 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Metasploitable2/Metasploitable2.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.825568 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.827397 DCon03   Platform architecture set to 'x86'
+00:00:00.827517 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Metasploitable3-ub1404/Metasploitable3-ub1404.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.827521 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.827960 DCon03   Platform architecture set to 'x86'
+00:00:00.828059 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Metasploitable3-ub1404/Metasploitable3-ub1404.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.828062 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.828758 DCon03   Platform architecture set to 'x86'
+00:00:00.828865 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/Metasploitable3-ub1404/Metasploitable3-ub1404.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.828868 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.831041 DCon03   Platform architecture set to 'x86'
+00:00:00.831145 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/metasploitable3_win2k8_1751664159717_18163/metasploitable3_win2k8_1751664159717_18163.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.831148 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.831608 DCon03   Platform architecture set to 'x86'
+00:00:00.831712 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/metasploitable3_win2k8_1751664159717_18163/metasploitable3_win2k8_1751664159717_18163.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.831716 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.832478 DCon03   Platform architecture set to 'x86'
+00:00:00.832576 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/metasploitable3_win2k8_1751664159717_18163/metasploitable3_win2k8_1751664159717_18163.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.832581 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.834636 DCon03   Platform architecture set to 'x86'
+00:00:00.834738 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/IE11 - Win7/IE11 - Win7.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.834742 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.835205 DCon03   Platform architecture set to 'x86'
+00:00:00.835304 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/IE11 - Win7/IE11 - Win7.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.835307 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.836091 DCon03   Platform architecture set to 'x86'
+00:00:00.836189 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/IE11 - Win7/IE11 - Win7.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.836193 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.838256 DCon03   Platform architecture set to 'x86'
+00:00:00.838353 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/MSEdge - Win10/MSEdge - Win10.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.838357 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.838836 DCon03   Platform architecture set to 'x86'
+00:00:00.838939 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/MSEdge - Win10/MSEdge - Win10.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.838943 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.839701 DCon03   Platform architecture set to 'x86'
+00:00:00.839800 DCon03   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Runtime error opening '/home/hadi/VirtualBox VMs/MSEdge - Win10/MSEdge - Win10.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.839804 DCon03   /build/virtualbox/src/VirtualBox-7.2.0/src/VBox/Main/src-server/MachineImpl.cpp[1000] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.870080 DCon03   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlo1: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:06.566941 main     VirtualBox: object deletion starts
+00:00:06.567506 main     HostDnsMonitor: shutting down ...
+00:00:06.567726 main     HostDnsMonitor: shut down
+00:00:06.578940 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={2ce10519-3c09-45d8-a12d-e887786146b7} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:06.579016 main     VirtualBox: object deleted

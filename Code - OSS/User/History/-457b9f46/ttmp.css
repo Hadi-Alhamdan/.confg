@@ -1,0 +1,70 @@
+/* css/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Define some base styles using @layer base */
+@layer base {
+  body {
+    @apply bg-dracula-bg text-dracula-fg font-sans antialiased;
+  }
+  h1 {
+    @apply text-4xl font-bold text-dracula-pink mb-6 text-center;
+  }
+  h2 {
+    @apply text-2xl font-semibold text-dracula-purple mb-6 text-center border-b border-dracula-comment pb-2;
+  }
+  h3 {
+    @apply text-xl font-medium text-dracula-cyan mb-4;
+  }
+  label {
+    @apply block text-sm font-medium text-dracula-fg mb-1;
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="datetime-local"],
+  select {
+    @apply w-full p-2.5 border border-dracula-comment rounded-md bg-dracula-bg text-dracula-fg 
+           focus:ring-2 focus:ring-dracula-pink focus:border-dracula-pink 
+           placeholder-dracula-comment;
+  }
+  input[type="checkbox"] {
+    @apply h-4 w-4 rounded border-dracula-comment text-dracula-purple focus:ring-dracula-purple mr-2 align-middle;
+  }
+  button, .btn { /* .btn for non-button elements styled as buttons */
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium 
+           transition-colors focus-visible:outline-none focus-visible:ring-2 
+           focus-visible:ring-dracula-pink focus-visible:ring-offset-2 
+           focus-visible:ring-offset-dracula-bg disabled:opacity-50 disabled:pointer-events-none;
+  }
+  button:not([id^="quick-"]), /* Exclude quick action buttons from full width */
+  button[type="submit"] { /* Make submit buttons potentially wider or different */
+     /* You might add specific styles for submit buttons here or use utilities */
+  }
+
+  /* Default primary button style */
+  button:not(.secondary):not(.danger):not(.nav-btn):not(.range-btn), 
+  .btn:not(.secondary):not(.danger):not(.nav-btn):not(.range-btn) {
+    @apply bg-dracula-purple text-dracula-bg hover:bg-opacity-90;
+  }
+  /* Secondary button style */
+  button.secondary, .btn.secondary {
+    @apply bg-dracula-current-line text-dracula-fg border border-dracula-comment hover:bg-dracula-selection;
+  }
+   /* Danger button style */
+  button.danger, .btn.danger {
+    @apply bg-dracula-red text-dracula-fg hover:bg-opacity-90;
+  }
+}
+
+@layer components {
+  .nav-btn {
+    @apply px-4 py-2 rounded-md text-sm font-medium transition-colors;
+    /* Default state (e.g., Dracula comment for bg, fg for text) */
+    @apply bg-dracula-comment text-dracula-fg hover:bg-dracula-selection;
+  }
+  .nav-btn.active { /* Style for the active class added by JS */
+    @apply bg-dracula-pink text-dracula-bg; /* Example active style */
+  }
+}

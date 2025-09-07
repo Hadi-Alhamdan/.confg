@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Productivity Hub</h1>
+        <nav id="main-navigation">
+            <button data-view="dashboard-section" class="nav-btn active">Dashboard</button>
+            <button data-view="habits-section" class="nav-btn">Habits</button>
+            <button data-view="tasks-section" class="nav-btn">Tasks</button>
+            <button data-view="timetracker-section" class="nav-btn">Time Tracker</button>
+            <button data-view="history-section" class="nav-btn">History</button>
+            <button data-view="data-management-section" class="nav-btn">Data</button>
+
+
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 1. Dashboard Section (Visible by default through app.js) -->
+        <section id="dashboard-section" class="view-section">
+            <h2>Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card score-card">
+                    <h3>Today's Score</h3>
+                    <p id="dashboard-daily-score" class="score-value">--</p>
+                    <div class="score-breakdown">
+                        <small>Habits: <span id="dashboard-habit-score">--</span></small>
+                        <small>Tasks: <span id="dashboard-task-score">--</span></small>
+                        <small>Time: <span id="dashboard-time-score">--</span></small>
+                        <small>Streak Bonus: <span id="dashboard-streak-bonus">--</span></small>
+                    </div>
+                </div>
+                <div class="form-group form-group-inline rest-day-toggle">
+                    <input type="checkbox" id="mark-today-rest-checkbox">
+                    <label for="mark-today-rest-checkbox">Mark Today as a Rest Day</label>
+                </div>
+            </div>
+            <div class="dashboard-card streak-card">
+                <h3>Current Streak</h3>
+                <p id="dashboard-streak-days" class="score-value">0 days</p>
+            </div>
+            <div class="dashboard-card quick-actions-card">
+                <h3>Quick Actions</h3>
+                <div class="quick-actions-buttons">
+                    <button id="quick-add-task-btn">Add Task</button>
+                    <button id="quick-log-time-btn">Log Time</button>
+                    <button id="quick-view-habits-btn">View Habits</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- 2. Habits Section (Initially hidden) -->
+        <section id="habits-section" class="view-section" style="display: none;">
+            <h2>Habits</h2>
+            <div class="form-container">
+                <h3>Add New Habit</h3>
+                <form id="add-habit-form">
+                    <div class="form-group">
+                        <label for="habit-name">Habit Name:</label>
+                        <input type="text" id="habit-name" name="name" placeholder="e.g., Read for 20 minutes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="habit-weight">Weight (0.0 - 1.0):</label>
+                        <input type="number" id="habit-weight" name="current_weight" step="0.05" min="0" max="1"
+                            placeholder="0.25" required>
+                    </div>
+                    <button type="submit">Add Habit</button>
+                </form>
+            </div>
+            <div class="list-container">
+                <h3>Today's Habits</h3>
+                <ul id="active-habits-list" class="habit-list">
+                    <!-- Habit items will be dynamically inserted here by habit.js -->
+                </ul>
+                <p id="active-habits-loading" style="display: none;">Loading habits...</p>
+            </div>
+            <div class="list-container">
+                <h3>Archived Habits</h3>
+                <details>
+                    <summary>Show/Hide Archived</summary>
+                    <ul id="archived-habits-list" class="habit-list">
+                        <!-- Archived habit items will be dynamically inserted here -->
+                    </ul>
+                    <p id="archived-habits-loading" style="display: none;">Loading archived habits...</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- 3. Tasks Section (Initially hidden) -->
+        <section id="tasks-section" class="view-section" style="display: none;">
+            <h2>Tasks</h2>
+            <div class="form-container">
+                <h3>Add New Task</h3>
+                <form id="add-task-form">
+                    <div class="form-group">
+                        <label for="task-description">Task Description:</label>
+                        <input type="text" id="task-description" name="description"
+                            placeholder="e.g., Finish project report" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-date">Target Date:</label>
+                        <input type="date" id="task-date" name="target_date" required>
+                    </div>
+                    <div class="form-group form-group-inline">
+                        <input type="checkbox" id="task-assigned" name="is_assigned" checked>
+                        <label for="task-assigned">Is Assigned? (counts towards score)</label>
+                    </div>
+                    <button type="submit">Add Task</button>
+                </form>
+            </div>
+            <div class="list-container">
+                <h3>Tasks for Today</h3> <!-- This title might need to be dynamic if showing tasks for other dates -->
+                <ul id="task-list" class="task-list">
+                    <!-- Task items will be dynamically inserted here by task.js -->
+                </ul>
+                <p id="tasks-loading" style="display: none;">Loading tasks...</p>
+            </div>
+        </section>
+
+        <!-- 4. Time Tracker Section (Initially hidden) -->
+        <section id="timetracker-section" class="view-section" style="display: none;">
+            <h2>Time Tracker</h2>
+            <div class="timer-container">
+                <h3>Live Timer</h3>
+                <div id="timer-display" class="timer-display">00:00:00</div>
+                <p id="current-timer-task" class="current-timer-task">No timer running</p>
+                <div class="timer-buttons">
+                    <button id="start-productive-btn">Start Productive</button>
+                    <button id="start-distracting-btn">Start Distracting</button>
+                    <button id="stop-timer-btn" style="display: none;">Stop Timer</button>
+                </div>
+            </div>
+            <div class="list-container">
+                <h3>Today's Totals</h3>
+                <div class="totals-display">
+                    <div>Productive Time: <strong id="total-productive-time">0h 0m</strong></div>
+                    <div>Distracting Time: <strong id="total-distracting-time">0h 0m</strong></div>
+                </div>
+            </div>
+            <div class="form-container">
+                <h3>Manually Log Time</h3>
+                <form id="manual-log-form">
+                    <div class="form-group">
+                        <label for="log-type">Type:</label>
+                        <select id="log-type" name="type" required>
+                            <option value="productive">Productive</option>
+                            <option value="distracting">Distracting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="log-start-time">Start Time:</label>
+                        <input type="datetime-local" id="log-start-time" name="start_time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="log-end-time">End Time:</label>
+                        <input type="datetime-local" id="log-end-time" name="end_time" required>
+                    </div>
+                    <button type="submit">Log Time</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 5. History Section (Initially hidden) -->
+        <section id="history-section" class="view-section" style="display: none;">
+            <h2>History & Reports</h2>
+
+            <!-- Date Range Selection for Charts -->
+            <div class="chart-controls form-container">
+                <h3>Select Date Range</h3>
+                <div class="date-range-inputs">
+                    <div class="form-group">
+                        <label for="chart-start-date">Start Date:</label>
+                        <input type="date" id="chart-start-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="chart-end-date">End Date:</label>
+                        <input type="date" id="chart-end-date">
+                    </div>
+                </div>
+                <div class="predefined-ranges">
+                    <button class="range-btn" data-range="7days">Last 7 Days</button>
+                    <button class="range-btn" data-range="30days">Last 30 Days</button>
+                    <button class="range-btn" data-range="currentMonth">Current Month</button>
+                    <button class="range-btn" data-range="currentYear">Current Year</button>
+                </div>
+                <button id="apply-date-range-btn">Apply Range & Update Charts</button>
+            </div>
+
+            <!-- Streak Progress Chart -->
+            <div class="chart-container list-container">
+                <h3>Streak Progress (Daily Scores)</h3>
+                <canvas id="streak-progress-chart"></canvas>
+                <p id="streak-chart-loading" style="display: none;">Loading chart data...</p>
+            </div>
+
+            <!-- Habit Progress Chart -->
+            <div class="chart-container list-container">
+                <h3>Habit Progress</h3>
+                <div class="form-group">
+                    <label for="habit-select-for-chart">Select Habit:</label>
+                    <select id="habit-select-for-chart">
+                        <option value="">-- Select a Habit --</option>
+                        <!-- Options will be populated by chart.js -->
+                    </select>
+                </div>
+                <canvas id="habit-progress-chart"></canvas>
+                <p id="habit-chart-loading" style="display: none;">Loading chart data...</p>
+            </div>
+
+            <!-- Placeholder for Detailed Daily Score Breakdown -->
+            <div class="list-container">
+                <h3>Daily Score Breakdown</h3>
+                <div class="form-group">
+                    <label for="history-date-select">Select Date for Details:</label>
+                    <input type="date" id="history-date-select">
+                </div>
+                <div id="daily-score-breakdown-details">
+                    <p>Select a date to see its score breakdown.</p>
+                    <!-- Details will be populated here -->
+                </div>
+            </div>
+
+        </section>
+
+        section id="data-management-section" class="view-section" style="display: none;">
+        <h2>Data Management</h2>
+
+        <div class="form-container">
+            <h3>Export Data</h3>
+            <p>Download all your application data as a JSON backup file.</p>
+            <button id="export-data-btn">Export All Data</button>
+        </div>
+
+        <div class="form-container">
+            <h3>Import Data</h3>
+            <p><strong>Warning:</strong> Importing data will overwrite all current data in the application.</p>
+            <input type="file" id="import-file-input" accept=".json">
+            <button id="import-data-btn" disabled>Import Data from File</button>
+            <p id="import-status" class="status-message" style="display: none;"></p>
+        </div>
+        </section>
+    </main>
+
+
+    <!-- <script src="js/utils.js"></script> --> <!-- We'll create this later -->
+    <script src="js/api.js"></script>
+    <script src="js/habit.js"></script>
+    <script src="js/task.js"></script>
+    <script src="js/timeTracker.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/dataManagement.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

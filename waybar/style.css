@@ -1,0 +1,126 @@
+/* Dracula Theme Variables */
+@define-color background #1f2130;
+@define-color foreground #f8f8f2;
+@define-color comment    #6272a4;
+@define-color cyan       #8be9fd;
+@define-color green      #50fa7b;
+@define-color orange     #ffb86c;
+@define-color pink       #ff79c6;
+@define-color purple     #bd93f9;
+@define-color red        #ff5555;
+@define-color yellow     #f1fa8c;
+
+/* General styles */
+* {
+    font-family: "Awesome", "Font Awesome 5 Free", "Noto Sans", sans-serif; /* Added Noto Sans as a fallback */
+    font-size: 14px; /* Base font size */
+    font-weight: normal;
+    border-style: none;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    min-height: 0px; /* Reset min-height for all elements */
+}
+
+window#waybar {
+    background-color: @background; 
+    color: @foreground;
+}
+
+/*
+Wrapper for module content to apply consistent padding for vertical centering.
+*/
+.modules-left > widget,
+.modules-center > widget,
+.modules-right > widget {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Style for individual modules/buttons if needed */
+#workspaces button {
+    padding: 3px 7px;
+    margin: 0px 3px;
+    color: @comment;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+#workspaces button:hover {
+    background-color: @comment;
+    color: @foreground;
+}
+
+#workspaces button.active {
+    color: @cyan;
+    border-bottom: 2px solid @cyan;
+    background-color: transparent;
+}
+
+#workspaces button.urgent {
+    color: @red;
+    border-bottom: 2px solid @red;
+}
+
+/* Styling for other modules */
+/* Ensure all your right-aligned modules and the center one are included here for padding */
+#clock, #battery, #network, #bluetooth, #custom-power, #pulseaudio, #backlight {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Window title in the center doesn't strictly need inter-module padding
+   if it's the only module there, but this ensures consistency if you add more. */
+#window {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: @foreground; /* General text color for window title */
+    font-style: italic; /* Optional: make it stand out a bit */
+}
+
+
+/* Specific module colors */
+#clock {
+    color: @purple;
+}
+ #battery.critical{
+    color: @red;
+}
+#battery.plugged { /* Added for when plugged, distinct from just charging */
+    color: @green;
+}
+#battery { 
+    color: @green;
+}
+#network {
+    color: @pink;
+}
+#network.disconnected {
+    color: @orange;
+}
+#bluetooth {
+    color: @cyan;
+}
+#bluetooth.disabled {
+    color: @comment;
+}
+
+#pulseaudio { /* Volume */
+    color: @orange;
+}
+#pulseaudio.muted {
+    color: @comment;
+}
+
+#backlight { /* Brightness */
+    color: @yellow;
+}
+
+#custom-power {
+    color: @red;
+    font-size: 16px;
+}
+#custom-power:hover {
+    color: @orange;
+}
+

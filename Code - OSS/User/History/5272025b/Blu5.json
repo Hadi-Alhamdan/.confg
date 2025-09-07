@@ -1,0 +1,29 @@
+{
+    "habits": [],
+    "habitCompletions": [],
+    "tasks": [],
+    "timeLogs": [],
+    "dailyScores": [
+        {
+            "id": 1,
+            "date": "2025-06-10",
+            "habit_score_component": 0,
+            "task_score_component": 0,
+            "time_score_component": 0,
+            "streak_bonus_component": 0,
+            "total_daily_score": 0,
+            "is_manually_marked_rest_day": 0,
+            "created_at": "2025-06-10 01:03:47",
+            "updated_at": "2025-06-10 01:03:47"
+        }
+    ],
+    "streakData": [
+        {
+            "id": 1,
+            "date": "2025-06-10",
+            "current_streak_days": 0,
+            "updated_at": "2025-06-10 01:03:47"
+        }
+    ],
+    "exportedAt": "2025-06-10T01:03:57.080Z"
+}

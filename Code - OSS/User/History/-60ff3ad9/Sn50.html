@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Productivity Hub</h1>
+        <nav>
+            <!-- Navigation will go here -->
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Inside index.html, in the <main> tag -->
+
+        <section id="habits-section" class="view-section">
+            <h2>Habits</h2>
+
+            <!-- Form for adding a new habit -->
+            <div class="form-container">
+                <h3>Add New Habit</h3>
+                <form id="add-habit-form">
+                    <div class="form-group">
+                        <label for="habit-name">Habit Name:</label>
+                        <input type="text" id="habit-name" name="name" placeholder="e.g., Read for 20 minutes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="habit-weight">Weight (0.0 - 1.0):</label>
+                        <input type="number" id="habit-weight" name="current_weight" step="0.05" min="0" max="1"
+                            placeholder="0.25" required>
+                    </div>
+                    <button type="submit">Add Habit</button>
+                </form>
+            </div>
+
+            <!-- Container for active habits -->
+            <div class="list-container">
+                <h3>Today's Habits</h3>
+                <ul id="active-habits-list" class="habit-list">
+                    <!-- Habit items will be dynamically inserted here by habit.js -->
+                    <!-- Example of a single habit item (for styling purposes):
+            <li class="habit-item" data-habit-id="1">
+                <div class="habit-info">
+                    <span class="habit-name">Read for 20 minutes</span>
+                    <span class="habit-weight">(Weight: 0.3)</span>
+                </div>
+                <div class="habit-actions">
+                    <button class="complete-btn">Complete</button>
+                    <button class="archive-btn">Archive</button>
+                </div>
+            </li>
+            -->
+                </ul>
+                <p id="active-habits-loading" style="display: none;">Loading habits...</p>
+            </div>
+
+            <!-- Container for archived habits -->
+            <div class="list-container">
+                <h3>Archived Habits</h3>
+                <details>
+                    <summary>Show/Hide Archived</summary>
+                    <ul id="archived-habits-list" class="habit-list">
+                        <!-- Archived habit items will be dynamically inserted here -->
+                    </ul>
+                    <p id="archived-habits-loading" style="display: none;">Loading archived habits...</p>
+                </details>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Your Name/App</p>
+    </footer>
+
+    <script src="js/utils.js"></script> <!-- We'll create this later, but good to plan for -->
+    <script src="js/api.js"></script>
+    <script src="js/habit.js"></script> <!-- ADD THIS LINE -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

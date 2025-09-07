@@ -1,0 +1,103 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "width": 1600,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/window"], // Added window title here
+    "modules-right": ["pulseaudio", "backlight", "battery", "bluetooth", "network" ,"custom-power", "clock"], // Added pulseaudio and backlight
+
+    "hyprland/workspaces": {
+        "format": "{id}: {icon}",
+        "format-icons": {
+            "default": "",
+            "active": "",
+            "urgent": "",
+            "empty": ""
+        },
+        "all-outputs": true,
+        "on-click": "activate"
+    },
+
+    "hyprland/window": { // Module for active window title
+        "format": "{}", // You can prefix this like " {}" or "{class}: {title}"
+        "max-length": 50, // Adjust to prevent overly long titles
+        "separate-outputs": true // Show only the window on the current output
+    },
+
+    "clock": {
+        "format": "{:%a %d %b   %I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "timezone": "Asia/Qatar"
+    },
+
+    "battery": {
+        "states": {
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "format-wifi": "   {essid}",
+        "format-ethernet": " Wired",
+        "format-disconnected": "睊 Off",
+        "tooltip-format": "{ifname} via {gateway}\nIP: {ipaddr}\nSignal: {signalStrength}%",
+        "on-click": "nm-connection-editor"
+    },
+
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": " Off",
+        "format-connected": " {device_alias}",
+        "tooltip-format": "Bluetooth: {status}\n{device_enumerate}",
+        "on-click": "blueman-manager"
+    },
+
+    "pulseaudio": {
+        "format": "{format_source}   {volume}% {icon}", // Main format includes the source status
+        "format-bluetooth": "{format_source}   {volume}% {icon}",
+        "format-bluetooth-muted": "{format_source}    {icon}",
+        "format-muted": "{format_source}   ", // Muted speaker format also includes source status
+        "format-source": "",               // Mic icon when source is active (NO volume percent)
+        "format-source-muted": "",         // Mic icon when source is muted
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 5, // % change on scroll
+        "on-click": "pavucontrol", // or your preferred audio control panel
+        "on-click-right": "pamixer --toggle-mute", // Toggles mute on right click
+        "tooltip-format": "{volume}% ({icon}) - {desc}\nUse scroll to change volume."
+    },
+
+    "backlight": { // Brightness module
+        "device": "intel_backlight", // You might need to change this. Check /sys/class/backlight/
+                                     // Common alternatives: "amdgpu_bl0", "acpi_video0"
+                                     // You can often omit this line and Waybar will try to auto-detect.
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""], // Brightness icons
+        "scroll-step": 5, // % change on scroll
+        "on-click": "brightnessctl set 10%+", // Example action, you might want a slider or specific values
+        "on-click-right": "brightnessctl set 10%-",
+        "tooltip-format": "Brightness: {percent}%\nScroll to adjust."
+    },
+
+    "custom-power": {
+        "format": "",
+        "tooltip": true,
+        "tooltip-format": "Power Off",
+        "on-click": "systemctl poweroff"
+    }
+}

@@ -1,0 +1,31 @@
+9/5/2025, 12:25:02 PM GMT+3 0: 
+
+----------------------------------------------
+9/5/2025, 12:25:02 PM GMT+3 1: Discord starting: {"releaseChannel":"stable","version":"0.0.108"}, modulepath: /home/hadi/.config/discord/0.0.108/modules
+9/5/2025, 12:25:02 PM GMT+3 2: ✅ webContents.created web1 ""
+9/5/2025, 12:25:02 PM GMT+3 3: ✅ window.created win1 "discord"
+9/5/2025, 12:25:03 PM GMT+3 4: ✅ webContents.did-finish-load web1
+9/5/2025, 12:27:58 PM GMT+3 5: ✅ webContents.created web2 ""
+9/5/2025, 12:27:58 PM GMT+3 6: ✅ window.created win2 "Discord"
+9/5/2025, 12:28:16 PM GMT+3 7: ✅ webContents.did-finish-load web2
+9/5/2025, 12:28:17 PM GMT+3 8: window.close win1
+9/5/2025, 12:28:17 PM GMT+3 9: webContents.destroyed web1
+9/5/2025, 12:28:17 PM GMT+3 10: window.closed win1
+9/5/2025, 12:46:17 PM GMT+3 11: window.close win2
+9/5/2025, 2:08:18 PM GMT+3 12: before-quit
+9/5/2025, 2:08:18 PM GMT+3 13: window.close win2
+9/5/2025, 2:08:18 PM GMT+3 14: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'audio.mojom.AudioService',
+  name: 'Audio Service'
+}
+9/5/2025, 2:08:18 PM GMT+3 15: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'network.mojom.NetworkService',
+  name: 'Network Service'
+}
+9/5/2025, 2:08:18 PM GMT+3 16: ❌ render-process-gone { reason: 'killed', exitCode: 15 }

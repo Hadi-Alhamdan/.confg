@@ -1,0 +1,16 @@
+2025/09/04-11:03:01.593 807 Reusing MANIFEST /home/hadi/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/04-11:03:01.594 807 Recovering log #229
+2025/09/04-11:03:01.616 807 Reusing old log /home/hadi/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000229.log 
+2025/09/04-11:03:02.257 79c Level-0 table #236: started
+2025/09/04-11:03:02.281 79c Level-0 table #236: 1544630 bytes OK
+2025/09/04-11:03:02.295 79c Delete type=0 #229
+2025/09/04-11:04:01.646 79d Compacting 1@1 + 3@2 files
+2025/09/04-11:04:01.707 79d Generated table #237@1: 22619 keys, 2184561 bytes
+2025/09/04-11:04:01.757 79d Generated table #238@1: 23009 keys, 2184355 bytes
+2025/09/04-11:04:01.779 79d Generated table #239@1: 6968 keys, 643825 bytes
+2025/09/04-11:04:01.779 79d Compacted 1@1 + 3@2 files => 5012741 bytes
+2025/09/04-11:04:01.791 79d compacted to: files[ 0 0 3 0 0 0 0 ]
+2025/09/04-11:04:01.792 79d Delete type=2 #231
+2025/09/04-11:04:01.792 79d Delete type=2 #232
+2025/09/04-11:04:01.792 79d Delete type=2 #233
+2025/09/04-11:04:01.792 79d Delete type=2 #236

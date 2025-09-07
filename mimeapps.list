@@ -1,0 +1,35 @@
+[Default Applications]
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+x-scheme-handler/chrome=zen.desktop
+text/html=zen.desktop
+application/x-extension-htm=zen.desktop
+application/x-extension-html=zen.desktop
+application/x-extension-shtml=zen.desktop
+application/xhtml+xml=zen.desktop
+application/x-extension-xhtml=zen.desktop
+application/x-extension-xht=zen.desktop
+image/jpeg=swappy.desktop
+image/png=swappy.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/json=code-oss.desktop
+text/plain=nvim.desktop
+inode/directory=nemo.desktop
+
+[Added Associations]
+x-scheme-handler/http=zen.desktop;
+x-scheme-handler/https=zen.desktop;
+x-scheme-handler/chrome=zen.desktop;
+text/html=zen.desktop;
+application/x-extension-htm=zen.desktop;
+application/x-extension-html=zen.desktop;
+application/x-extension-shtml=zen.desktop;
+application/xhtml+xml=zen.desktop;
+application/x-extension-xhtml=zen.desktop;
+application/x-extension-xht=zen.desktop;
+image/jpeg=com.github.weclaw1.ImageRoll.desktop;swappy.desktop;
+image/png=com.github.weclaw1.ImageRoll.desktop;swappy.desktop;
+application/pdf=sioyek.desktop;org.pwmt.zathura.desktop;
+application/json=code-oss.desktop;
+application/x-zerosize=mpv.desktop;
+text/plain=nvim.desktop;

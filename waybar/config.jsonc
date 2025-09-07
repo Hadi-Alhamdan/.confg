@@ -1,0 +1,97 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "width": 1600,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["pulseaudio", "backlight", "battery", "bluetooth", "network","clock"],
+
+    "hyprland/workspaces": {
+        "format": "{id}: {icon}",
+        "format-icons": {
+            "default": "",
+            "active": "",
+            "urgent": "",
+            "empty": ""
+        },
+        "all-outputs": true,
+        "on-click": "activate"
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 50,
+        "separate-outputs": true
+    },
+
+    "clock": {
+        "format": "{:%a %d %b   %I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "timezone": "Asia/Qatar"
+    },
+
+    "battery": {
+        "states": {
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "interface": "wlo1",
+        "format-wifi": "   {essid}",
+        "format-ethernet": "   Wired",
+        "format-disconnected": "睊 Off",
+        "tooltip-format-wifi": "{essid} ({signalStrength}% signal strength)\n{ipaddr}/{cidr} via {gwaddr}",
+        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
+        "tooltip-format-disconnected": "Network disconnected.",
+        "on-click": "nm-connection-editor"
+    },
+
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": " Off",
+        "format-connected": " {device_alias}",
+        "tooltip-format": "Bluetooth: {status}\n{device_enumerate}",
+        "on-click": "blueman-manager"
+    },
+
+    "pulseaudio": {
+        "format": "{format_source}   {volume}% {icon}",
+        "format-bluetooth": "{format_source}   {volume}% {icon}",
+        "format-bluetooth-muted": "{format_source}    {icon}",
+        "format-muted": "{format_source}   ",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "on-click-right": "pamixer --toggle-mute",
+        "tooltip-format": "{volume}% ({icon}) - {desc}\nUse scroll to change volume."
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "scroll-step": 5,
+        "on-click": "brightnessctl set 10%+",
+        "on-click-right": "brightnessctl set 10%-",
+        "tooltip-format": "Brightness: {percent}%\nScroll to adjust."
+    } 
+}

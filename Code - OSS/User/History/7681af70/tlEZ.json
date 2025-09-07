@@ -1,0 +1,15 @@
+{
+  "name": "productivity_app_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:init": "tailwindcss init -p", 
+    "tailwind:build": "tailwindcss -i ./css/main.css -o ./css/style.css --watch" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+  
+}

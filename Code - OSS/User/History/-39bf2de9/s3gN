@@ -1,0 +1,4 @@
+theme = Dracula
+font-family = Meslo LGS Font Mono
+font-size = 16
+gtk-titleabar = true

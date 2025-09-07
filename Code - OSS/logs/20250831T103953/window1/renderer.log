@@ -1,0 +1,8 @@
+2025-08-31 10:39:53.955 [error] Error: The editor could not be opened because the file was not found.
+    at GEe.gc (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2598:81151)
+    at async GEe.setInput (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2598:80309)
+    at async jqe.S (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:610:58567)
+    at async jqe.L (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:610:57122)
+    at async jqe.openEditor (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:610:56204)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:722:23350
+2025-08-31 10:39:53.995 [info] Started local extension host with pid 16052.

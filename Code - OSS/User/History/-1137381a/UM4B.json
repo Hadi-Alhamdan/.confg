@@ -1,0 +1,305 @@
+{
+    "habits": [
+        {
+            "id": 1,
+            "name": "الفيقة بكير",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:03:43",
+            "updated_at": "2025-06-14 03:57:13"
+        },
+        {
+            "id": 2,
+            "name": "ركعتين الفجر",
+            "current_weight": 0.1,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:03:28",
+            "updated_at": "2025-06-14 03:57:32"
+        },
+        {
+            "id": 3,
+            "name": "صلاة الفجر",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:03:15",
+            "updated_at": "2025-06-14 04:18:11"
+        },
+        {
+            "id": 4,
+            "name": "اذكار الصباح",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:03:02",
+            "updated_at": "2025-06-14 04:15:21"
+        },
+        {
+            "id": 5,
+            "name": "قراءة القران",
+            "current_weight": 0.15,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:02:09",
+            "updated_at": "2025-06-14 03:58:31"
+        },
+        {
+            "id": 6,
+            "name": "صلاة الضحى",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:01:50",
+            "updated_at": "2025-06-14 03:59:01"
+        },
+        {
+            "id": 7,
+            "name": "صلاة الظهر",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:01:31",
+            "updated_at": "2025-06-14 04:17:41"
+        },
+        {
+            "id": 8,
+            "name": "صلاة العصر",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:01:19",
+            "updated_at": "2025-06-14 04:18:22"
+        },
+        {
+            "id": 9,
+            "name": "اذكار المساء",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:00:56",
+            "updated_at": "2025-06-14 04:15:04"
+        },
+        {
+            "id": 10,
+            "name": "صلاة المغرب",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:00:26",
+            "updated_at": "2025-06-14 04:18:04"
+        },
+        {
+            "id": 11,
+            "name": "صلاة العشاء",
+            "current_weight": 0.07,
+            "is_archived": 0,
+            "created_at": "2025-06-14 03:00:12",
+            "updated_at": "2025-06-14 04:17:48"
+        },
+        {
+            "id": 12,
+            "name": "كتابة اليوميات",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 02:59:51",
+            "updated_at": "2025-06-14 04:00:14"
+        },
+        {
+            "id": 13,
+            "name": "قيام الليل",
+            "current_weight": 0.1,
+            "is_archived": 0,
+            "created_at": "2025-06-14 02:59:31",
+            "updated_at": "2025-06-14 04:00:27"
+        },
+        {
+            "id": 14,
+            "name": "نومة بكير",
+            "current_weight": 0.05,
+            "is_archived": 0,
+            "created_at": "2025-06-14 02:59:16",
+            "updated_at": "2025-06-14 04:00:40"
+        }
+    ],
+    "habitCompletions": [
+        {
+            "id": 1,
+            "habit_id": 1,
+            "completion_date": "2025-06-26",
+            "weight_at_completion": 0.05,
+            "created_at": "2025-06-26 19:16:27"
+        },
+        {
+            "id": 2,
+            "habit_id": 2,
+            "completion_date": "2025-06-26",
+            "weight_at_completion": 0.1,
+            "created_at": "2025-06-26 19:16:30"
+        },
+        {
+            "id": 3,
+            "habit_id": 4,
+            "completion_date": "2025-06-26",
+            "weight_at_completion": 0.05,
+            "created_at": "2025-06-26 19:16:35"
+        },
+        {
+            "id": 4,
+            "habit_id": 5,
+            "completion_date": "2025-06-26",
+            "weight_at_completion": 0.15,
+            "created_at": "2025-06-26 19:16:37"
+        },
+        {
+            "id": 5,
+            "habit_id": 8,
+            "completion_date": "2025-06-26",
+            "weight_at_completion": 0.07,
+            "created_at": "2025-06-26 19:16:40"
+        },
+        {
+            "id": 6,
+            "habit_id": 9,
+            "completion_date": "2025-06-26",
+            "weight_at_completion": 0.05,
+            "created_at": "2025-06-26 19:16:43"
+        },
+        {
+            "id": 7,
+            "habit_id": 12,
+            "completion_date": "2025-06-26",
+            "weight_at_completion": 0.05,
+            "created_at": "2025-06-26 19:16:47"
+        },
+        {
+            "id": 8,
+            "habit_id": 14,
+            "completion_date": "2025-06-26",
+            "weight_at_completion": 0.05,
+            "created_at": "2025-06-26 19:16:51"
+        }
+    ],
+    "tasks": [
+        {
+            "id": 1,
+            "description": "Finish Cryptography Module in THM",
+            "target_date": "2025-06-26",
+            "is_assigned": 1,
+            "is_done": 0,
+            "completion_date": null,
+            "created_at": "2025-06-25 19:24:43",
+            "updated_at": "2025-06-25 19:24:43"
+        }
+    ],
+    "timeLogs": [
+        {
+            "id": 1,
+            "type": "productive",
+            "start_time": "2025-06-26T01:00:00.000Z",
+            "end_time": "2025-06-26T01:30:00.000Z",
+            "date_logged_for": "2025-06-26",
+            "duration_minutes": 30,
+            "created_at": "2025-06-26 19:26:27"
+        },
+        {
+            "id": 2,
+            "type": "productive",
+            "start_time": "2025-06-26T12:00:00.000Z",
+            "end_time": "2025-06-26T12:20:00.000Z",
+            "date_logged_for": "2025-06-26",
+            "duration_minutes": 20,
+            "created_at": "2025-06-26 19:27:09"
+        },
+        {
+            "id": 3,
+            "type": "distracting",
+            "start_time": "2025-06-26T01:30:00.000Z",
+            "end_time": "2025-06-26T12:00:00.000Z",
+            "date_logged_for": "2025-06-26",
+            "duration_minutes": 630,
+            "created_at": "2025-06-26 19:27:43"
+        },
+        {
+            "id": 4,
+            "type": "distracting",
+            "start_time": "2025-06-26T12:30:00.000Z",
+            "end_time": "2025-06-26T17:00:00.000Z",
+            "date_logged_for": "2025-06-26",
+            "duration_minutes": 270,
+            "created_at": "2025-06-26 19:28:45"
+        }
+    ],
+    "dailyScores": [
+        {
+            "id": 1,
+            "date": "2025-06-17",
+            "habit_score_component": 0,
+            "task_score_component": 0,
+            "time_score_component": 0,
+            "streak_bonus_component": 0,
+            "total_daily_score": 0,
+            "is_manually_marked_rest_day": 0,
+            "notes": "",
+            "created_at": "2025-06-17 17:17:05",
+            "updated_at": "2025-06-17 17:17:05"
+        },
+        {
+            "id": 2,
+            "date": "2025-06-21",
+            "habit_score_component": 0,
+            "task_score_component": 0,
+            "time_score_component": 0,
+            "streak_bonus_component": 0,
+            "total_daily_score": 0,
+            "is_manually_marked_rest_day": 0,
+            "notes": "",
+            "created_at": "2025-06-21 12:15:59",
+            "updated_at": "2025-06-21 12:15:59"
+        },
+        {
+            "id": 3,
+            "date": "2025-06-25",
+            "habit_score_component": 0,
+            "task_score_component": 0,
+            "time_score_component": 0,
+            "streak_bonus_component": 0,
+            "total_daily_score": 0,
+            "is_manually_marked_rest_day": 0,
+            "notes": "",
+            "created_at": "2025-06-25 19:23:52",
+            "updated_at": "2025-06-25 19:23:52"
+        },
+        {
+            "id": 4,
+            "date": "2025-06-26",
+            "habit_score_component": 57.00000000000001,
+            "task_score_component": 0,
+            "time_score_component": -51.66666666666667,
+            "streak_bonus_component": 0,
+            "total_daily_score": 20.483333333333334,
+            "is_manually_marked_rest_day": 0,
+            "notes": "",
+            "created_at": "2025-06-25 19:23:59",
+            "updated_at": "2025-06-26 19:28:45"
+        }
+    ],
+    "streakData": [
+        {
+            "id": 1,
+            "date": "2025-06-17",
+            "current_streak_days": 0,
+            "updated_at": "2025-06-17 17:17:05"
+        },
+        {
+            "id": 2,
+            "date": "2025-06-21",
+            "current_streak_days": 0,
+            "updated_at": "2025-06-21 12:15:59"
+        },
+        {
+            "id": 3,
+            "date": "2025-06-25",
+            "current_streak_days": 0,
+            "updated_at": "2025-06-25 19:23:52"
+        },
+        {
+            "id": 4,
+            "date": "2025-06-26",
+            "current_streak_days": 0,
+            "updated_at": "2025-06-26 19:28:45"
+        }
+    ],
+    "exportedAt": "2025-06-26T19:29:17.284Z"
+}

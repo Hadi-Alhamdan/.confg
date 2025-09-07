@@ -1,0 +1,90 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "54b2bd4fa4b872363a350522c2872a82e875ba7342091d668e58f35ccd9eaa29",
+    "telemetry.devDeviceId": "1f0b8a6f-b619-48b0-a4d3-af1c6bbaf488",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1755930907981"
+            }
+        ]
+    },
+    "windowControlHeight": 42,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/hadi/habit-tracker": "__default__profile__",
+            "file:///home/hadi/Documents/%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8%D8%A9/%D8%B4%D8%B1%D8%AD%20%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%B5%D8%A7%D9%84%D8%AD%D9%8A%D9%86%20%D9%84%D8%A7%D8%A8%D9%86%20%D8%B9%D8%AB%D9%8A%D9%85%D9%8A%D9%86%20": "__default__profile__",
+            "file:///home/hadi/John/Task04": "__default__profile__",
+            "file:///home/hadi/John/Task06": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1755930907981": "__default__profile__"
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/hadi/.config/Code - OSS/Backups/1755930907981",
+            "uiState": {
+                "mode": 1,
+                "x": 32,
+                "y": 73,
+                "width": 1364,
+                "height": 1494,
+                "zoomLevel": 1
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#282a36",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#f8f8f2",
+            "background": "#282a36",
+            "editorBackground": "#282a36",
+            "titleBarBackground": "#21222c",
+            "activityBarBackground": "#343746",
+            "sideBarBackground": "#21222c",
+            "statusBarBackground": "#191a21",
+            "statusBarNoFolderBackground": "#191a21"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 192,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "49021a32449e469676403b9d9db1226c": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                },
+                "2a87b35170258a18eaf269a4b91aae68": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "9cad45e935e40b4f5c8834daf40d71d4": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "1a2377a6167e47ef9608e87fef1ac902": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

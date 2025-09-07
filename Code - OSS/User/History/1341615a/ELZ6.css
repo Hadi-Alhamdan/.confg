@@ -1,0 +1,456 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav button { /* Example */
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+/* css/style.css */
+
+/* --- Form & List Styles --- */
+.form-container, .list-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Habit List Styles --- */
+.habit-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.habit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.habit-item:last-child {
+    border-bottom: none;
+}
+
+.habit-info {
+    flex-grow: 1;
+}
+
+.habit-name {
+    font-weight: bold;
+}
+
+.habit-weight {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.habit-actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.habit-actions .archive-btn, .habit-actions .unarchive-btn {
+    background-color: #6c757d;
+}
+.habit-actions .archive-btn:hover, .habit-actions .unarchive-btn:hover {
+    background-color: #5a6268;
+}
+
+.habit-actions .delete-btn {
+    background-color: #dc3545;
+}
+.habit-actions .delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* For completed habits - we'll add this class with JS */
+.habit-item.completed {
+    background-color: #e9f5e9;
+    text-decoration: line-through;
+}
+
+.habit-item.completed .habit-name {
+    color: #555;
+}
+
+/* For archived list details */
+details {
+    margin-top: 10px;
+}
+details > summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* css/style.css */
+
+/* --- Form Group Inline for Checkboxes --- */
+.form-group-inline {
+    display: flex;
+    align-items: center;
+}
+.form-group-inline input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+}
+.form-group-inline label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* --- Task List Styles --- */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-main {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.task-checkbox {
+    margin-right: 15px;
+    /* Optional: Make checkbox larger */
+    transform: scale(1.2);
+}
+
+.task-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.task-tag {
+    background-color: #eee;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+}
+
+.task-tag.assigned {
+    background-color: #e0f3ff;
+    color: #006ec2;
+}
+
+.delete-btn-task {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 0 5px;
+}
+.delete-btn-task:hover {
+    color: #a71d2a;
+}
+
+/* For completed tasks - we'll add this class with JS */
+.task-item.done .task-description {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* css/style.css */
+
+/* --- Time Tracker Styles --- */
+.timer-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.timer-display {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+    color: #333;
+}
+
+.current-timer-task {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+    min-height: 1.2em; /* Prevent layout shift */
+}
+
+.timer-buttons button {
+    margin: 0 10px;
+}
+
+#stop-timer-btn {
+    background-color: #dc3545;
+}
+#stop-timer-btn:hover {
+    background-color: #c82333;
+}
+
+.totals-display {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* --- Dashboard Styles --- */
+#dashboard-section {
+    /* No specific styles needed if it's the default visible one */
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.dashboard-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; Remove this if text needs to be left-aligned */
+}
+
+.dashboard-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.score-card .score-value {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.streak-card .score-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #28a745; /* Green for streak */
+    margin: 10px 0;
+    text-align: center;
+}
+
+.score-breakdown {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.score-breakdown small {
+    display: block; /* Each breakdown on a new line */
+    margin-bottom: 5px;
+}
+
+.score-breakdown span {
+    font-weight: bold;
+}
+
+.quick-actions-card .quick-actions-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+    width: 100%;
+    margin-top: auto; /* Pushes buttons to the bottom if card height varies */
+}
+
+.quick-actions-card .quick-actions-buttons button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+}
+
+
+/* css/style.css */
+
+/* ... existing styles ... */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below header */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+#main-navigation button.nav-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#main-navigation button.nav-btn:hover {
+    background-color: #777;
+}
+
+#main-navigation button.nav-btn.active {
+    background-color: #007bff; /* Active button color */
+    font-weight: bold;
+}
+
+/* Ensure view sections take up space when active */
+.view-section {
+    padding-bottom: 20px; /* Add some padding at the bottom of each section */
+}
+
+
+/* --- Chart Controls and Containers --- */
+.chart-controls {
+    /* Uses .form-container styles by default */
+}
+
+.date-range-inputs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Allow wrapping if not enough space */
+}
+
+.date-range-inputs .form-group {
+    flex: 1; /* Make them share space */
+    min-width: 200px; /* Minimum width before wrapping */
+}
+
+.predefined-ranges {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.predefined-ranges .range-btn {
+    background-color: #6c757d;
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+.predefined-ranges .range-btn:hover {
+    background-color: #5a6268;
+}
+
+#apply-date-range-btn {
+    display: block; /* Make it full width or adjust as needed */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.chart-container {
+    /* Uses .list-container styles by default */
+    margin-top: 30px; /* More space between chart sections */
+}
+
+.chart-container canvas {
+    display: block;
+    width: 100% !important;
+    max-height: 100%;
+    margin-top: 15px;
+}
+
+#daily-score-breakdown-details {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}

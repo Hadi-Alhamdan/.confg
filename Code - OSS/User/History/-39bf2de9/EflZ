@@ -1,0 +1,4 @@
+theme = Dracula
+font-family =  JetBrainsMono NFM
+font-size = 13
+gtk-titlebar = true
